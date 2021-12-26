@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{781E203D-18D7-41E9-821F-1CD297E19591}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AlbumlerBurada</RootNamespace>
+    <AssemblyName>AlbumlerBurada</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlbumIslemler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlbumIslemler.Designer.cs">
+      <DependentUpon>AlbumIslemler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Albumler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Albumler.Designer.cs">
+      <DependentUpon>Albumler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classlar\Album.cs" />
+    <Compile Include="Classlar\CekOdeme.cs" />
+    <Compile Include="Classlar\KrediKarti.cs" />
+    <Compile Include="Classlar\Musteri.cs" />
+    <Compile Include="Classlar\Nakit.cs" />
+    <Compile Include="Classlar\Odeme.cs" />
+    <Compile Include="Classlar\SiparisDetayi.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="girisDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>girisDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="girisDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>girisDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="girisDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>girisDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="girisDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>girisDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="girisDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>girisDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KayıtOl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KayıtOl.Designer.cs">
+      <DependentUpon>KayıtOl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MusteriGiris.Designer.cs">
+      <DependentUpon>MusteriGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Müsteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Müsteriler.Designer.cs">
+      <DependentUpon>Müsteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeCek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeCek.Designer.cs">
+      <DependentUpon>OdemeCek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeKart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeKart.Designer.cs">
+      <DependentUpon>OdemeKart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sepetfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sepetfrm.Designer.cs">
+      <DependentUpon>Sepetfrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlbumIslemler.resx">
+      <DependentUpon>AlbumIslemler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KayıtOl.resx">
+      <DependentUpon>KayıtOl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MusteriGiris.resx">
+      <DependentUpon>MusteriGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Müsteriler.resx">
+      <DependentUpon>Müsteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeCek.resx">
+      <DependentUpon>OdemeCek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeKart.resx">
+      <DependentUpon>OdemeKart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sepetfrm.resx">
+      <DependentUpon>Sepetfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="girisDataSet.xsc">
+      <DependentUpon>girisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>girisDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="girisDataSet.xss">
+      <DependentUpon>girisDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet1.xsc">
+      <DependentUpon>girisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>girisDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="girisDataSet1.xss">
+      <DependentUpon>girisDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet2.xsc">
+      <DependentUpon>girisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>girisDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="girisDataSet2.xss">
+      <DependentUpon>girisDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet3.xsc">
+      <DependentUpon>girisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>girisDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="girisDataSet3.xss">
+      <DependentUpon>girisDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet4.xsc">
+      <DependentUpon>girisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="girisDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>girisDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="girisDataSet4.xss">
+      <DependentUpon>girisDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ana form.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kayıtol.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\müşterigiriş.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin2.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\admin3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
